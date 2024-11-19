@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
 
 .topNavigation{
-    border-bottom: 0.15rem solid black;
     padding: 1.45rem 1.5rem 1.25rem 1.5rem;
     top: 0;
     left: 0;
@@ -16,10 +21,77 @@
     text-decoration: none;
     color: black;
     font-size: 1rem;
+    width: 1rem;
+    height: auto;
 }
 
-.homeHero{
-    padding: 6rem 6rem;
+.navLogoImage {
+  width: 3.5rem;
+  height: auto;
+  display: block;
+}
+
+.homeHero {
+    height: max-content;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-image: url(./assets/HeroImage.jpg);
+    background-color: rgba(255, 255, 255, 0.92);
+    background-blend-mode: overlay;
+    margin-top: 5rem;
+}
+
+
+.heroTitleContainer{
+}
+
+.heroTitle{
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 4rem;
+    text-decoration: none;
+    color: #13795F;
+    max-width: 80%;
+    line-height: 4rem;
+}
+
+.heroSubTitle{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+    text-decoration: none;
+    color: #6C8A82;
+    margin-top: 0.75rem;
+}
+
+.heroText{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.4rem;
+    letter-spacing: 0.02rem;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+}
+
+.heroImageContainer {
+    width: 40%;
+    border-radius: 1rem;
+    height: 50%;
+    overflow: hidden;
+    display: none;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
 }
 
 .grantPage{
@@ -301,13 +373,87 @@
     justify-content: space-between;
 }
 
-@media (width>70rem){
+@media (width>75rem){
     .topNavigation{
-        border-bottom: 0.15rem solid black;
-        padding: 1.45rem 1.5rem 1.25rem 1.5rem;
+        padding: 2rem 1.5rem 2rem 4rem;
         position: fixed;
         background: white;
         width: 100vw;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .navLogo{
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        width: 1rem;
+        height: auto;
+    }
+
+    .navLogoImage {
+    width: 3.5rem;
+    height: auto;
+    display: block;
+    }
+
+    .homeHero{
+        height: 90vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 15rem;
+        background-image: none;
+        flex-direction: row;
+    }
+
+    .heroTitleContainer{
+        width: 50%;
+    }
+
+    .heroTitle{
+        font-family: "Montserrat", serif;
+        font-weight: 800;
+        font-size: 5rem;
+        text-decoration: none;
+        color: #13795F;
+        max-width: 80%;
+    }
+
+    .heroSubTitle{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #6C8A82;
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+
+    .heroText{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.4rem;
+        letter-spacing: 0.02rem;
+        width: 85%;
+        margin-top: 2rem;
+    }
+
+    .heroImageContainer {
+        width: 40%;
+        border-radius: 1rem;
+        height: 50%;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .heroImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
     }
 
     .small{
