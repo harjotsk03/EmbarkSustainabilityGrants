@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.topNavigation{
-    padding: 1.45rem 1.5rem 1.25rem 1.5rem;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    width: 100vw;
+.topNavigation {
+  padding: 1.45rem 1.5rem 1.25rem 1.5rem;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: white;
+  width: 100vw;
 }
 
-.navLogo{
-    font-family: "Montserrat", serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    width: 1rem;
-    height: auto;
+.navLogo {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  width: 1rem;
+  height: auto;
 }
 
 .navLogoImage {
@@ -32,665 +32,761 @@
 }
 
 .homeHero {
-    height: max-content;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem 2rem;
-    background-image: url(./assets/HeroImage.jpg);
-    background-color: rgba(255, 255, 255, 0.92);
-    background-blend-mode: overlay;
-    margin-top: 5rem;
+  height: max-content;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-image: url(./assets/HeroImage.jpg);
+  background-color: rgba(255, 255, 255, 0.92);
+  background-blend-mode: overlay;
+  margin-top: 5rem;
 }
 
-
-.heroTitleContainer{
+.heroTitleContainer {
 }
 
-.heroTitle{
-    font-family: "Montserrat", serif;
-    font-weight: 800;
-    font-size: 4rem;
-    text-decoration: none;
-    color: #13795F;
-    max-width: 80%;
-    line-height: 4rem;
+.heroTitle {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: #13795f;
+  max-width: 80%;
+  line-height: 4rem;
 }
 
-.heroSubTitle{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-    line-height: 1.3rem;
-    text-decoration: none;
-    color: #6C8A82;
-    margin-top: 0.75rem;
+.heroSubTitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  text-decoration: none;
+  color: #6c8a82;
+  margin-top: 0.75rem;
+  max-width: 80%;
 }
 
-.heroText{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.4rem;
-    letter-spacing: 0.02rem;
-    font-size: 0.85rem;
-    margin-top: 1.5rem;
+.heroText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0.02rem;
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  max-width: 90%;
 }
 
 .heroImageContainer {
-    width: 40%;
-    border-radius: 1rem;
-    height: 50%;
-    overflow: hidden;
-    display: none;
+  width: 40%;
+  border-radius: 1rem;
+  height: 50%;
+  overflow: hidden;
+  display: none;
 }
 
 .heroImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
 }
 
-.grantPage{
-    padding: 0rem 1.5rem;
+.grantPage {
+  padding: 0rem 1.5rem;
 }
 
 .backButton {
-    margin-top: 1rem;
-    width: max-content;
-    display: block;
-    margin-bottom: 0rem;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: black;
-    margin-top: 5rem;
+  margin-top: 1rem;
+  width: max-content;
+  display: block;
+  margin-bottom: 0rem;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 5rem;
 }
 
-.grantTitle{
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 2.75rem;
-    text-decoration: none;
-    color: black;
-    margin-top: 1rem;
+.grantTitle {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 2.75rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 1rem;
 }
 
-.grantOrg{
-    margin-top: -1.4rem;
-    margin-left: 0.2rem;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: black;
+.grantOrg {
+  margin-top: -1.4rem;
+  margin-left: 0.2rem;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
 }
 
-.grantCategories{
-    font-family: "Montserrat", serif;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
+.grantCategories {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
 }
 
-.grantCategoriesBold{
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
+.grantCategoriesBold {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
 }
 
-.grantDescription{
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.75rem;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 2rem;
+.grantDescription {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 2rem;
 }
 
-.buttonPrimary{
-    background: #000;
-    border-radius: 1000px;
-    padding: 0.75rem 1.3rem;
-    color: white;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    width: max-content;
-    text-decoration: none;
+.buttonPrimary {
+  background: #000;
+  border-radius: 1000px;
+  padding: 0.75rem 1.3rem;
+  color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: max-content;
+  text-decoration: none;
 }
 
-.grantInfo{
+.grantInfo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.grantInfoItem {
+  margin-top: -1rem;
+}
+
+.grantInfoTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.grantInfoText {
+  margin-top: -0.3rem;
+  color: #5050ff;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.grantRequirementsTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-decoration: none;
+  margin-top: 4rem;
+}
+
+.grantRequirementsSubTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  max-width: 85%;
+  text-decoration: none;
+  margin-top: -1.4rem;
+}
+
+.grantRequirementsText {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  margin-top: -0.2rem;
+}
+
+.relatedGrantsTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+.relatedGrantsSubTitle {
+  margin-top: -1.4rem;
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  max-width: 85%;
+  text-decoration: none;
+}
+
+.relatedGrantTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-decoration: none;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+.relatedGrantCategories {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+.relatedInfoTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+  margin-top: 0rem;
+}
+
+.relatedInfoText {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.relatedGrantInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.small {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.large {
+  display: none;
+}
+
+.relatedGrantCard {
+  border: 0.15rem solid black;
+  border-radius: 0.8rem;
+  padding: 2rem 2rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.relatedGrantsCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer {
+  padding: 1.5rem 2rem;
+  border-top: 0.1rem solid black;
+  margin-top: 2rem;
+  left: 0;
+}
+
+.footerMain {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footerSub {
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.grantHeroMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.grant {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popularGrantsSection {
+  padding: 2rem 2rem;
+}
+
+.popularGrantsTitle {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #13795f;
+  max-width: 100%;
+  line-height: 2.8rem;
+}
+
+.popularGrantsSubTitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+  color: #6c8a82;
+  margin-top: 0.15rem;
+  max-width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #F8EEE1;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem;
+  max-width: 856%;
+  border-radius: 1rem;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.card a {
+}
+
+.grantCardHeroContainer{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.grantInfoItem{
-    margin-top: -1rem;
+.grantCardInfoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
 }
 
-.grantInfoTitle{
-    color: black;
+@media (width>60rem) {
+  .topNavigation {
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    position: fixed;
+    background: white;
+    width: 100vw;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .navLogo {
     font-family: "Montserrat", serif;
     font-weight: 500;
-    font-size: 0.75rem;
     text-decoration: none;
-}
+    color: black;
+    font-size: 1rem;
+    width: 1rem;
+    height: auto;
+  }
 
-.grantInfoText{
-    margin-top: -0.3rem;
-    color: #5050FF;
+  .navLogoImage {
+    width: 3.5rem;
+    height: auto;
+    display: block;
+  }
+
+  .homeHero {
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 4rem;
+    background-image: none;
+    flex-direction: row;
+    margin-top: 5.5rem;
+  }
+
+  .heroTitleContainer {
+    width: 50%;
+  }
+
+  .heroTitle {
     font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 4.75rem;
+    text-decoration: none;
+    color: #13795f;
+    max-width: 80%;
+    line-height: 4.5rem;
+  }
+
+  .heroSubTitle {
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
     text-decoration: none;
-}
+    color: #6c8a82;
+    max-width: 75%;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+  }
 
-.grantRequirementsTitle{
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 1.75rem;
-    text-decoration: none;
-    margin-top: 4rem;
-}
-
-.grantRequirementsSubTitle{
-    color: black;
-    font-family: "Montserrat", serif;
+  .heroText {
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.25rem;
-    max-width: 85%;
-    text-decoration: none;
-    margin-top: -1.4rem;
-}
-
-.grantRequirementsText{
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0.02rem;
+    width: 85%;
     font-size: 1.1rem;
-    line-height: 1.75rem;
-    text-decoration: none;
-    margin-top: -0.2rem;
-}
+    margin-top: 3.5rem;
+  }
 
-.relatedGrantsTitle{
+  .heroImageContainer {
+    width: 40%;
+    border-radius: 1rem;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
+  }
+
+  .small {
+    display: none;
+  }
+
+  .large {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: max-content;
+    padding-right: 4rem;
+    gap: 2rem;
+  }
+
+  .grantHeroMain {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .relatedGrantCard {
+    border: 0.15rem solid black;
+    border-radius: 0.8rem;
+    padding: 4rem 6rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .relatedGrantTitle {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 600;
-    font-size: 1.75rem;
-    text-decoration: none;
-}
-
-.relatedGrantsSubTitle{
-    margin-top: -1.4rem;
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.25rem;
-    max-width: 85%;
-    text-decoration: none;
-}
-
-.relatedGrantTitle{
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 2.3rem;
+    width: 70%;
     text-decoration: none;
     margin-top: 0rem;
     margin-bottom: 1.5rem;
-}
+  }
 
-.relatedGrantCategories{
+  .relatedGrantCategories {
     font-family: "Montserrat", serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: black;   
+    color: black;
     margin-bottom: 1rem;
-    margin-top: 0rem;
-}
+    margin-top: 3rem;
+  }
 
-.relatedInfoTitle{
+  .relatedInfoTitle {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     text-decoration: none;
     margin-bottom: 0.3rem;
     margin-top: 0rem;
-}
+  }
 
-.relatedInfoText{
+  .relatedInfoText {
     color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .relatedGrantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 18%;
+  }
+
+  .grantTitle {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 5rem;
+    text-decoration: none;
+    color: black;
+    margin-top: -1rem;
+  }
+
+  .grantOrg {
+    margin-top: -2.9rem;
+    margin-left: 0.2rem;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .grantCategories {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 5rem;
+  }
+
+  .grantCategoriesBold {
     font-family: "Montserrat", serif;
     font-weight: 600;
     font-size: 1.3rem;
     text-decoration: none;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
+    color: black;
+  }
 
-.relatedGrantInfo{
+  .grantDescription {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+  }
+
+  .grantPage {
+    padding: 2rem 8rem 3rem 8rem;
+  }
+
+  .grant {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-}
+    width: 70%;
+    padding-right: 8rem;
+  }
 
+  .grantHeroMain {
+    display: flex;
+    flex-direction: column;
+  }
 
-.small{
+  .hero {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 5rem;
+    padding: 3rem 0rem;
+  }
 
-}
-
-.large{
-    display: none;
-}
-
-.relatedGrantCard{
-    border: 0.15rem solid black;
-    border-radius: 0.8rem;
-    padding: 2rem 2rem;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.relatedGrantsCards{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.footer{
-    padding: 1.5rem 2rem;
-    border-top: 0.1rem solid black;
-    margin-top: 2rem;
-    left: 0;
-}
-
-.footerMain{
+  .grantInfoTitle {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 500;
     font-size: 1rem;
     text-decoration: none;
-}
+  }
 
-.footerSub{
+  .grantInfoText {
+    margin-top: -0.4rem;
+    color: #5050ff;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .buttonPrimary {
+    background: #000;
+    border-radius: 1000px;
+    padding: 0.9rem 1.6rem;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: max-content;
+    text-decoration: none;
+  }
+
+  .grantRequirementsTitle {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-decoration: none;
+    margin-top: 4rem;
+  }
+
+  .grantRequirementsSubTitle {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    max-width: 85%;
+    text-decoration: none;
+    margin-top: -1.4rem;
+  }
+
+  .grantRequirementsText {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 80%;
+    text-decoration: none;
+    margin-top: -0.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .relatedGrantsTitle {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-decoration: none;
+  }
+
+  .relatedGrantsSubTitle {
+    margin-top: -1.4rem;
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    max-width: 85%;
+    text-decoration: none;
+  }
+
+  .footer {
+    padding: 2.5rem 4rem;
+    border-top: 0.1rem solid black;
+    margin-top: 2rem;
+  }
+
+  .footerMain {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+
+  .footerSub {
     color: rgb(85, 85, 85);
     font-family: "Montserrat", serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
-}
+  }
 
-.grantHeroMain{
-    display: flex;
-    flex-direction: column;
-}
+  .popularGrantsSection {
+    padding: 3rem 8rem;
+  }
 
-.grant{
-    display: flex;
-    flex-direction: column;
-}
+  .popularGrantsTitle {
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: #13795f;
+    max-width: 80%;
+    line-height: 4rem;
+  }
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-@media (width>75rem){
-    .topNavigation{
-        padding: 2rem 1.5rem 2rem 4rem;
-        position: fixed;
-        background: white;
-        width: 100vw;
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
-    }
-
-    .navLogo{
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        text-decoration: none;
-        color: black;
-        font-size: 1rem;
-        width: 1rem;
-        height: auto;
-    }
-
-    .navLogoImage {
-    width: 3.5rem;
-    height: auto;
-    display: block;
-    }
-
-    .homeHero{
-        height: 90vh;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0rem 10rem;
-        background-image: none;
-        flex-direction: row;
-    }
-
-    .heroTitleContainer{
-        width: 50%;
-    }
-
-    .heroTitle{
-        font-family: "Montserrat", serif;
-        font-weight: 800;
-        font-size: 4.75rem;
-        text-decoration: none;
-        color: #13795F;
-        max-width: 80%;
-    }
-
-    .heroSubTitle{
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: #6C8A82;
-        width: 80%;
-        margin-top: 1.5rem;
-    }
-
-    .heroText{
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        line-height: 1.4rem;
-        letter-spacing: 0.02rem;
-        width: 85%;
-        font-size: 1rem;
-        margin-top: 3rem;
-    }
-
-    .heroImageContainer {
-        width: 40%;
-        border-radius: 1rem;
-        height: 50%;
-        overflow: hidden;
-        display: flex;
-    }
-
-    .heroImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
-    }
-
-    .small{
-        display: none;
-    }
-
-    .large{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: max-content;
-        padding-right: 4rem;
-        gap: 2rem;
-    }
-
-    .grantHeroMain{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .relatedGrantCard{
-        border: 0.15rem solid black;
-        border-radius: 0.8rem;
-        padding: 4rem 6rem;
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .relatedGrantTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 2.3rem;
-        width: 70%;
-        text-decoration: none;
-        margin-top: 0rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .relatedGrantCategories{
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: black;   
-        margin-bottom: 1rem;
-        margin-top: 3rem;
-    }
-
-    .relatedInfoTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1.2rem;
-        text-decoration: none;
-        margin-bottom: 0.3rem;
-        margin-top: 0rem;
-    }
-
-    .relatedInfoText{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 1.8rem;
-        text-decoration: none;
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-    .relatedGrantInfo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-        width: 18%;
-    }
-
-    .grantTitle{
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 5rem;
-        text-decoration: none;
-        color: black;
-        margin-top: -1rem;
-    }
-
-    .grantOrg{
-        margin-top: -2.9rem;
-        margin-left: 0.2rem;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: black;
-    }
-
-    .grantCategories{
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: black;
-        margin-top: 5rem;
-    }
-
-    .grantCategoriesBold{
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: black;
-    }
-
-    .grantDescription{
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1.3rem;
-        line-height: 2.2rem;
-        text-decoration: none;
-        color: black;
-        margin-bottom: 2rem;
-        margin-top: 0rem;
-    }
-
-    .grantPage{
-        padding: 2rem 8rem 3rem 8rem;
-    }
-
-    .grant{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        padding-right: 8rem;
-    }
-
-    .grantHeroMain{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 5rem;
-        padding: 3rem 0rem;
-    }
-
-    .grantInfoTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1rem;
-        text-decoration: none;
-    }
-
-    .grantInfoText{
-        margin-top: -0.4rem;
-        color: #5050FF;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 2rem;
-        text-decoration: none;
-    }
- 
-    .buttonPrimary{
-        background: #000;
-        border-radius: 1000px;
-        padding: 0.9rem 1.6rem;
-        color: white;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1rem;
-        width: max-content;
-        text-decoration: none;
-    }
-
-    .grantRequirementsTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 2.2rem;
-        text-decoration: none;
-        margin-top: 4rem;
-    }
-
-    .grantRequirementsSubTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1.1rem;
-        line-height: 1.25rem;
-        max-width: 85%;
-        text-decoration: none;
-        margin-top: -1.4rem;
-    }
-
-    .grantRequirementsText{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1.3rem;
-        line-height: 2rem;
-        width: 80%;
-        text-decoration: none;
-        margin-top: -0.2rem;
-        margin-bottom: 4rem;
-    }
-
-    .relatedGrantsTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 2.2rem;
-        text-decoration: none;
-    }
-
-    .relatedGrantsSubTitle{
-        margin-top: -1.4rem;
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 1.1rem;
-        line-height: 1.25rem;
-        max-width: 85%;
-        text-decoration: none;
-    }
-    
-    .footer{
-        padding: 2.5rem 4rem;
-        border-top: 0.1rem solid black;
-        margin-top: 2rem;
-    }
-
-    .footerMain{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1.3rem;
-        text-decoration: none;
-    }
-
-    .footerSub{
-        color: rgb(85, 85, 85);
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1rem;
-        text-decoration: none;
-    }
+  .popularGrantsSubTitle {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+    text-decoration: none;
+    color: #6c8a82;
+    margin-top: 0.15rem;
+    max-width: 80%;
+  }
 }

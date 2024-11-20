@@ -31,18 +31,95 @@
     <section class="homeHero">
       <div class="heroTitleContainer">
         <h1 class="heroTitle">Our Grants</h1>
-        <p class="heroSubTitle">Look through all the available grants and find the one that fits your needs the best!</p>
+        <h2 class="heroSubTitle">Look through all the available grants and find the one that fits your needs the best!</h2>
         <p class="heroText">The Embark Sustainability Grant provides SFU students with funding and support to turn innovative sustainability ideas into impactful projects. Whether you're passionate about climate action, social equity, sustainable food systems, or waste reduction, our grant program is designed to help you bring your vision to life on campus or in the community.</p>
       </div>
       <div class="heroImageContainer">
         <img class="heroImage" src="./assets/HeroImage.jpg"/>
       </div>
     </section>
+
+    <div class="popularGrantsSection">
+      <h3 class="popularGrantsTitle">Popular Grants</h3>
+      <h4 class="popularGrantsSubTitle">See a few grants that have been popular over the past few weeks!</h4>
+      <div class="cards-container" id="cardsContainer"></div>
+    </div>
     <footer class="footer">
       <p class="footerMain">Embark Sustainability</p>
       <p class="footerSub">
         SUB 1310 - 8888 University Drive Burnaby, B.C. V5A 1S6
       </p>
     </footer>
+
+  
+    <script>
+        const popularGrantCards = [
+            {
+                id: 1,
+                title: "Ocean Action Grant",
+                categories: "Categories: Youth, Climate, Community",
+                link: "pages/OceanActionGrant.html",
+                amount: "$250-$3000",
+                duration: "3 months",
+                deadline: "October 1",
+                amountTitle: "Amount",
+                durationTitle: "Duration",
+                deadlineTitle: "Deadline",
+            },
+            {
+                id: 2,
+                title: "Eco-Action Accelerator",
+                categories: "Categories: Youth, Climate, Community",
+                link: "pages/OceanActionGrant.html",
+                amount: "$5000",
+                duration: "6 months",
+                deadline: "August 5",
+                amountTitle: "Amount",
+                durationTitle: "Duration",
+                deadlineTitle: "Deadline",
+            },
+            {
+                id: 3,
+                title: "Canadian Youth Climate Action Award",
+                link: "pages/OceanActionGrant.html",
+                amount: "$500-$5000",
+                deadline: "October 1",
+                amountTitle: "Amount",
+                deadlineTitle: "Deadline",
+            },
+        ];
+        
+
+        function createCard(data) {
+            return `
+                <div class="card" data-id="${data.id}">
+                  <div class="grantCardHeroContainer">  
+                    <div>
+                      <h3>${data.title}</h3>
+                      <p>${data.categories ?? ''}</p>
+                    </div>
+                    <a class="" href="${data.link}">View Grant Information</a>
+                  </div>
+                  <div class="grantCardInfoContainer">
+                    <h4>${data.amountTitle ?? ''}</h4>
+                    <p>${data.amount ?? ''}</p>
+                    <h4>${data.durationTitle ?? ''}</h4>
+                    <p>${data.duration ?? ''}</p>
+                    <h4>${data.deadlineTitle ?? ''}</h4>
+                    <p>${data.deadline ?? ''}</p>
+                  </div>
+                </div>
+            `;
+        }
+
+        function renderCards() {
+            const container = document.getElementById('cardsContainer');
+            const cardsHTML = popularGrantCards.map(card => createCard(card)).join('');
+            container.innerHTML = cardsHTML;
+        }
+
+        // Initial render
+        renderCards();
+    </script>
   </body>
 </html>
