@@ -436,6 +436,26 @@
 
 }
 
+.cardTitle{
+
+}
+
+.cardCategories{
+
+}
+
+.cardViewButton{
+
+}
+
+.classLabel{
+
+}
+
+.classInfo{
+
+}
+
 @media (width>60rem) {
   .topNavigation {
     padding: 1.5rem 1.5rem 1.5rem 4rem;
@@ -806,7 +826,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 3rem;
+    padding: 5rem 6rem;
     max-width: 100%;
     border-radius: 1rem;
     }
@@ -856,5 +876,53 @@
     .filterButton:hover{
         cursor: pointer;
         background: #13795f;
+    }
+
+    .cardTitle{
+        color: black;
+        font-family: "Montserrat", serif;
+        font-weight: 800;
+        font-size: 3rem;
+        max-width: 80%;
+    }
+
+    .cardCategories{
+        color: black;
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .cardViewButton{
+        color: white;
+        border-radius: 0.9rem;
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 1rem;
+        text-decoration: none;
+        background: #13795F;
+        width: max-content;
+        padding: 0.75rem 1.5rem;
+        margin-top: 3rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    .cardViewButton:hover{
+        background: #6C8A82;
+    }
+
+    .classLabel{
+        color: black;
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .classInfo{
+        color: #6C8A82;
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 1.5rem;
     }
 }
