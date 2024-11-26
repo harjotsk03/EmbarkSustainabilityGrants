@@ -483,6 +483,10 @@
   transition: 0.3s ease-in-out;
 }
 
+.cardViewButton:hover{
+  background: #6C8A82;
+}
+
 
 .classLabel{
   font-family: "Montserrat", serif;
