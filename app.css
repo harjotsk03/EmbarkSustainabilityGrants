@@ -47,6 +47,8 @@
 }
 
 .heroTitleContainer {
+
+  
 }
 
 .heroTitle {
@@ -397,8 +399,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4rem 3rem;
-  max-width: 85%;
+  padding: 2rem 2rem;
+  max-width: 95%;
   border-radius: 1rem;
 }
 
@@ -414,46 +416,86 @@
 }
 
 .grantCardHeroContainer{
-    display: flex;
+
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 .grantCardInfoContainer{
+  margin-top: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     text-align: left;
     width: 100%;
+    margin-left: 0.5rem;
 }
 
 .grantSearchInput{
+  width: 85%;
+  font-family: "Open Sans";
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  border: 1.5px solid black;
 
 }
 
 .inputContainer{
-
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
 }
 
 .cardTitle{
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  justify-content:safe;
 
 }
 
 .cardCategories{
+  font-family: "Montserrat", serif;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
 
+}
+
+.smallGrantButton {
+  display:block
+}
+
+.largeGrantButton {
+  display:none
 }
 
 .cardViewButton{
-
+  color: white;
+  border-radius: 1rem;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  background: #13795F;
+  width: max-content;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  transition: 0.3s ease-in-out;
 }
 
-.classLabel{
 
+.classLabel{
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .classInfo{
-
+  color: #6C8A82;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .cardInfoContainer{
@@ -480,6 +522,24 @@
 
 
 
+    .filterButton{
+      width: 7rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      border: none;
+      background: #88B29F;
+      color: white;
+      transition: ease-in-out;
+      transition-duration: 250ms;
+  }
+
+  .filterButton:hover{
+      cursor: pointer;
+      background: #13795f;
+  }
+
+
+/* MOBILE ABOVE  */
 
 
 
@@ -499,6 +559,7 @@
 
 
 
+ /*  Desktop BELOW */
 
 
 
@@ -541,7 +602,7 @@
 
   .heroTitleContainer {
     width: 50%;
-  }
+}
 
   .heroTitle {
     font-family: "Montserrat", serif;
@@ -958,6 +1019,14 @@
         background: #6C8A82;
     }
 
+    .smallGrantButton {
+      display:none
+    }
+    
+    .largeGrantButton {
+      display:block;
+    }
+
     .classLabel{
         color: black;
         font-family: "Montserrat", serif;
@@ -966,7 +1035,7 @@
     }
 
     .classInfo{
-        color: #6C8A82;
+        color: red;
         font-family: "Montserrat", serif;
         font-weight: 600;
         font-size: 1.5rem;
