@@ -102,7 +102,7 @@
 }
 
 .backButton {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: max-content;
   display: block;
   margin-bottom: 0rem;
@@ -124,7 +124,6 @@
 }
 
 .grantOrg {
-  margin-top: -1.4rem;
   margin-left: 0.2rem;
   font-family: "Montserrat", serif;
   font-weight: 400;
@@ -173,12 +172,13 @@
 
 .grantInfo {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 2.5rem;
+  height: max-content;
+  gap: 2rem;
 }
 
 .grantInfoItem {
-  margin-top: -1rem;
 }
 
 .grantInfoTitle {
@@ -190,7 +190,6 @@
 }
 
 .grantInfoText {
-  margin-top: -0.3rem;
   color: #5050ff;
   font-family: "Montserrat", serif;
   font-weight: 600;
@@ -215,7 +214,6 @@
   line-height: 1.25rem;
   max-width: 85%;
   text-decoration: none;
-  margin-top: -1.4rem;
 }
 
 .grantRequirementsText {
@@ -225,7 +223,6 @@
   font-size: 1.1rem;
   line-height: 1.75rem;
   text-decoration: none;
-  margin-top: -0.2rem;
 }
 
 .relatedGrantsTitle {
@@ -237,7 +234,6 @@
 }
 
 .relatedGrantsSubTitle {
-  margin-top: -1.4rem;
   color: black;
   font-family: "Montserrat", serif;
   font-weight: 400;
@@ -684,7 +680,9 @@ font-size: 1.8rem;
   .grantHeroMain {
     display: flex;
     flex-direction: row;
+
   }
+
 
   .relatedGrantCard {
     border: 0.15rem solid black;
@@ -747,11 +745,10 @@ font-size: 1.8rem;
 
   .grantTitle {
     font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 5rem;
+    font-weight: 800;
+    font-size: 6rem;
     text-decoration: none;
-    color: black;
-    margin-top: -1rem;
+    color: #13795F;
   }
 
   .grantOrg {
@@ -759,9 +756,10 @@ font-size: 1.8rem;
     margin-left: 0.2rem;
     font-family: "Montserrat", serif;
     font-weight: 400;
+    text-transform: uppercase;
     font-size: 1.1rem;
     text-decoration: none;
-    color: black;
+    color: #6c8a82;
   }
 
   .grantCategories {
@@ -793,13 +791,13 @@ font-size: 1.8rem;
   }
 
   .grantPage {
-    padding: 2rem 8rem 3rem 8rem;
+    padding: 3rem 8rem 3rem 8rem;
   }
 
   .grant {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     padding-right: 8rem;
   }
 
@@ -820,8 +818,8 @@ font-size: 1.8rem;
   .grantInfoTitle {
     color: black;
     font-family: "Montserrat", serif;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 450;
+    font-size: 1.25rem;
     text-decoration: none;
   }
 
@@ -830,7 +828,7 @@ font-size: 1.8rem;
     color: #6C8A82;
     font-family: "Montserrat", serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .buttonPrimary {
@@ -855,6 +853,10 @@ font-size: 1.8rem;
     background: #6C8A82;
     transition-duration: 500ms;
     animation: ease-in-out;
+  }
+
+  .grantRequirements{
+    margin-top: 2rem;
   }
 
   .grantRequirementsTitle {
@@ -898,7 +900,6 @@ font-size: 1.8rem;
   }
 
   .relatedGrantsSubTitle {
-    margin-top: -1.4rem;
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 400;
@@ -1053,6 +1054,14 @@ font-size: 1.8rem;
         
     }
 
+    .grantInfo{
+        gap: 3rem;
+    }
+
+    .grantInfoItem {
+        width: 100%;
+    }
+
     .cardViewButton:hover{
         background: #6C8A82;
     }
@@ -1125,4 +1134,45 @@ font-size: 1.8rem;
         color: 13795f;
     }
 
+    .backButton {
+        margin-top: 4rem;
+        width: max-content;
+        display: block;
+        margin-bottom: 0rem;
+        font-family: "Montserrat", serif;
+        font-weight: 400;
+        padding: 0.75rem 0rem;
+        border-radius: 0.65rem;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+        margin-top: 4rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    .backButton:hover{
+        color: white;
+        background: #6C8A82;
+        padding: 0.75rem 1rem;
+    }
+
+    .backButton:focus{
+        color: white;
+        background: #6C8A82;
+        padding: 0.75rem 1rem; 
+    }
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End fully opaque */
+    transform: translateY(0); /* Reset transform */
+  }
+}
+
+.fade-in {
+  opacity: 0; /* Start fully transparent */
+  transform: translateY(20px); /* Optional: Start slightly moved down */
+  animation: fadeIn 0.9s forwards; /* Animation duration can be adjusted */
 }
