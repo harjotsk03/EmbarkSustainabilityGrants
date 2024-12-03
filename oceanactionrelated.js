@@ -25,33 +25,33 @@ const popularGrantCards = [
 function createCard(data) {
   return `
                 <div class="card" data-id="${data.id}">
-                  <div class="grantCardHeroContainer">  
-                    <div>
-                      <h3 class="cardTitle">${data.title}</h3>
-                      <p class="cardCategories">${data.categories ?? ""}</p>
-                    </div>
-                    <a class="cardViewButton largeGrantButton" href="${
-                      data.link
-                    }">View Grant Information</a>
-                  </div>
-                  <div class="grantCardInfoContainer">
-                    <div class="cardInfoContainer">
-                      <h4 class="classLabel">${data.amountTitle ?? ""}</h4>
-                      <p class="classInfo">${data.amount ?? ""}</p>
-                    </div>
-                    <div class="cardInfoContainer">
-                      <h4 class="classLabel">${data.durationTitle ?? ""}</h4>
-                      <p class="classInfo">${data.duration ?? ""}</p>
-                    </div>
-                    <div class="cardInfoContainer">
-                      <h4 class="classLabel">${data.deadlineTitle ?? ""}</h4>
-                      <p class="classInfo">${data.deadline ?? ""}</p>
-                    </div>
-                    <a class="cardViewButton smallGrantButton" href="${
-                      data.link
-                    }">View Grant Information</a>
-                  </div>
-                </div>
+      <div class="cardLeft">
+        <div class="cardTitleContainer">
+          <h3 class="cardTitle">${data.title}</h3>
+          <p class="cardCategories">${data.categories ?? ""}</p>
+        </div>
+        <a class="large cardButton" href="${
+          data.link
+        }">View Grant Information</a>
+      </div>
+      <div class="cardRight">
+        <div>
+          <h4 class="cardHeader">${data.amountTitle ?? ""}</h4>
+          <p class="cardInfo">${data.amount ?? ""}</p>
+        </div>
+        <div>
+          <h4 class="cardHeader">${data.durationTitle ?? ""}</h4>
+          <p class="cardInfo">${data.duration ?? ""}</p>
+        </div>
+        <div>
+          <h4 class="cardHeader">${data.deadlineTitle ?? ""}</h4>
+          <p class="cardInfo">${data.deadline ?? ""}</p>
+        </div>
+        <a class="small cardButton" href="${
+          data.link
+        }">View Grant Information</a>
+      </div>
+    </div>
             `;
 }
 

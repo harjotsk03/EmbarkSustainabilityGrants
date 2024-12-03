@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topNavigation {
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100vw;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+}
+
+.navLogo {
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.navLogoImage {
+  width: 3.5rem;
+  height: auto;
+  display: block;
+}
+
+.navLogo:hover {
+  transform: scale(1.1);
+}
+
+.navLogo:focus {
+  transform: scale(2);
+}
+
+.grantHeroMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grantTitle {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 6rem;
+  text-decoration: none;
+  color: #13795f;
+  max-width: 90%;
+}
+
+.grantOrg {
+  margin-top: 0.7rem;
+  margin-left: 0.2rem;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #6c8a82;
+}
+
+.grantCategories {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-top: 5rem;
+}
+
+.grantDescription {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 2rem;
+  max-width: 60%;
+  margin-top: 1rem;
+}
+
+.grantInfoTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 450;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.grantInfoText {
+  margin-top: 0.6rem;
+  color: #6c8a82;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.buttonPrimary {
+  background: #13795f;
+  border-radius: 1000px;
+  padding: 0.9rem 1.6rem;
+  color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: max-content;
+  text-decoration: none;
+}
+
+.buttonPrimary:hover {
+  background: #6c8a82;
+  transition-duration: 500ms;
+  animation: ease-in-out;
+}
+
+.buttonPrimary:focus {
+  background: #6c8a82;
+  transition-duration: 500ms;
+  animation: ease-in-out;
+}
+
+.small {
+  display: none;
+}
+
+.large {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  justify-content: space-between;
+  height: 40vh;
+}
+
+.grantRequirements {
+  margin-top: 5.5rem;
+}
+
+.relatedGrants {
+  margin-top: 4rem;
+  width: 100%;
+  background: orange;
+}
+
+.popularGrantsTitle {
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 2.6rem;
+  text-decoration: none;
+  color: #13795f;
+  max-width: 80%;
+  line-height: 4rem;
+}
+
+.popularGrantsSubTitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  text-decoration: none;
+  color: #6c8a82;
+  margin-top: 0.15rem;
+  max-width: 80%;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: start;
+  margin-top: 1.5rem;
+}
+
+.card {
+  width: 40%;
+  background: #f8eee1;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.cardLeft {
+  max-width: 65%;
+  height: max-content;
+}
+
+.cardRight {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.cardTitleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cardTitleContainer h3,
+.cardTitleContainer p {
+  margin: 0;
+}
+
+.cardHeader {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 550;
+  font-size: 0.9rem;
+}
+
+.cardInfo {
+  color: #6c8a82;
+  font-family: "Montserrat", serif;
+  font-weight: 550;
+  font-size: 1.4rem;
+  margin-top: 0.15rem;
+}
+
+.small {
+  display: none;
+}
+
+.cardCategories {
+  color: #4d4d4d;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.cardButton {
+  background: #13795f;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+  text-wrap: wrap;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  height: max-content;
+  width: max-content;
+  transition: 0.3s ease-in-out;
+}
+
+.cardButton:hover {
+  background: #6c8a82;
+}
+
+.cardButton:focus {
+  background: #6c8a82;
+  transform: scale(1.1);
+}
+
+.grantRequirementsText {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  width: 80%;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.grantHeroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.backButton{
+    
+}
+
+.grantPage{
+    padding: 9rem 10rem 0rem 10rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 72rem) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grantHeroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    background: #f8eee1;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+  }
+
+  .cardLeft {
+    max-width: 70%;
+  }
+
+  .cardRight {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cardTitle {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cardTitleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cardTitleContainer h3,
+  .cardTitleContainer p {
+    margin: 0;
+  }
+
+  .cardHeader {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .cardInfo {
+    color: #6C8A82;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .cardCategories{
+    color: #4D4D4D;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding-bottom: 1rem;
+  }
+
+  .cardButton{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    width: max-content;
+    transition: 0.3s ease-in-out;
+  }
+
+  .cardButton:hover{
+    background: #6C8A82;
+  }
+
+  .cardButton:focus{
+    background: #6C8A82;
+    transform: scale(1.1);
+  }
+
+  .grantPage{
+        padding: 9rem 4rem 0rem 4rem;
+    }
+}
+
+@media (max-width: 35rem) {
+
+  .grantPage{
+        padding: 9rem 2rem 0rem 2rem;
+    }
+
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    background: #f8eee1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.25rem;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 1rem;
+  }
+
+  .cardLeft {
+    max-width: 100%;
+  }
+
+  .cardRight {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .cardTitle {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .cardTitleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cardTitleContainer h3,
+  .cardTitleContainer p {
+    margin: 0;
+  }
+
+  .cardHeader {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .cardInfo {
+    color: #6C8A82;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 0.15rem;
+  }
+
+  .cardCategories{
+    color: #4D4D4D;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-bottom: 0rem;
+    line-height: 1.25rem;
+  }
+
+  .cardButton{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    width:auto;
+  }
+
+
+  .cardButton:hover{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    width:auto;
+  }
+
+    .footer {
+    padding: 1.5rem 2rem;
+    border-top: 0.1rem solid black;
+    margin-top: 2rem;
+    left: 0;
+    }
+
+    .footerMain {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    }
+
+    .footerSub {
+    color: rgb(85, 85, 85);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    }
+}
+
