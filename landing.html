@@ -13,15 +13,70 @@
     <title>Embark Sustainability Grants</title>
   </head>
 
-  <body class="landingBody">
-    <input
-      type="text"
-      id="grantSearchInput"
-      placeholder="Search for a grant..."
-    />
-    <div class="cards-container" id="AllCardsContainer"></div>
+  <body>
+    <nav class="topNavigation">
+      <a
+        class="navLogo"
+        href="https://www.embarksustainability.org/"
+        target="_blank"
+        ><img class="navLogoImage" src="./assets/EmbarkLogo.png"
+      /></a>
+    </nav>
+
+    <section class="homeHero">
+      <div class="heroTitleContainer">
+        <h1 class="heroTitle">Our Grants</h1>
+        <h2 class="heroSubTitle">
+          Look through all the available grants and find the one that fits your
+          needs the best!
+        </h2>
+        <p class="heroText">
+          The Embark Sustainability Grant provides SFU students with funding and
+          support to turn innovative sustainability ideas into impactful
+          projects. Whether you're passionate about climate action, social
+          equity, sustainable food systems, or waste reduction, our grant
+          program is designed to help you bring your vision to life on campus or
+          in the community.
+        </p>
+      </div>
+      <div class="heroImageContainer">
+        <img class="heroImage" src="./assets/HeroImage.jpg" />
+      </div>
+    </section>
+
+    <div class="landingPage">
+      <h3 class="popularGrantsTitle">Popular Grants</h3>
+      <h4 class="popularGrantsSubTitle">
+        See a few grants that have been popular over the past few weeks!
+      </h4>
+      <div class="cards-container" id="cardsContainer"></div>
+      <h3 class="popularGrantsTitle">All Grants</h3>
+      <h4 class="popularGrantsSubTitle">
+        See all of the grants offered, search, scroll or filter through them!
+      </h4>
+      <div class="inputContainer">
+        <input
+          id="grantSearchInput"
+          class="grantSearchInput"
+          placeholder="Search for a grant by name..."
+        />
+        <button class="filterButton">Filter</button>
+      </div>
+      <div class="cards-container" id="AllCardsContainer"></div>
+    </div>
+    <footer class="footer">
+      <p class="footerMain">Embark Sustainability</p>
+      <a href="./landing.html">NEW</a>
+      <p class="footerSub">
+        SUB 1310 - 8888 University Drive Burnaby, B.C. V5A 1S6
+      </p>
+    </footer>
+    <button id="scrollToTopBtn" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+      Scroll to Top
+    </button>
 
     <script src="./scrollToTop.js"></script>
+    <script src="./popularcards2.js"></script>
     <script src="./allcards2.js"></script>
   </body>
 </html>
