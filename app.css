@@ -13,6 +13,7 @@
   position: fixed;
   background: white;
   width: 100vw;
+  z-index: 999;
 }
 
 .navLogo {
@@ -575,6 +576,7 @@ font-size: 1.8rem;
     background: white;
     width: 100vw;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+    z-index: 999;
   }
 
 
