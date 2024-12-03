@@ -350,7 +350,18 @@ transition: 0.3s ease-in-out;
 
 
 
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End fully opaque */
+    transform: translateY(0); /* Reset transform */
+  }
+}
 
+.fade-in {
+  opacity: 0; /* Start fully transparent */
+  transform: translateY(20px); /* Optional: Start slightly moved down */
+  animation: fadeIn 0.9s forwards; /* Animation duration can be adjusted */
+}
 
 
 
