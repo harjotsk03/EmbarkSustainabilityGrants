@@ -567,6 +567,83 @@ font-size: 1.8rem;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /*  Desktop BELOW */
 
 
@@ -747,10 +824,10 @@ font-size: 1.8rem;
 
   .grantTitle {
     font-family: "Montserrat", serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 5rem;
     text-decoration: none;
-    color: black;
+    color: #13795F;
     margin-top: -1rem;
   }
 
@@ -761,7 +838,7 @@ font-size: 1.8rem;
     font-weight: 400;
     font-size: 1.1rem;
     text-decoration: none;
-    color: black;
+    color: #6C8A82;
   }
 
   .grantCategories {
@@ -858,18 +935,18 @@ font-size: 1.8rem;
   }
 
   .grantRequirementsTitle {
-    color: black;
+    color: #13795F;
     font-family: "Montserrat", serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 2.2rem;
     text-decoration: none;
     margin-top: 4rem;
   }
 
   .grantRequirementsSubTitle {
-    color: black;
+    color: #6C8A82;
     font-family: "Montserrat", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.25rem;
     max-width: 85%;
