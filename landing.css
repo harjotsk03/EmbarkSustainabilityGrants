@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.landingBody{
-    padding: 2rem 2rem;
+.landingPage{
+    padding: 8rem 2rem 2rem 2rem;
+}
+
+.topNavigation {
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100vw;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navLogoImage {
+    width: 3.5rem;
+    height: auto;
+    display: block;
 }
 
 .cards-container {
@@ -15,16 +30,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
 }
 
 .card {
-  width: 45%;
-  background: #F8EEE1;
+  width: 40%;
+  background: #f8eee1;
   display: flex;
   flex-direction: row;
-  padding: 1rem 1rem;
+  padding: 2rem 2.5rem;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -32,59 +47,200 @@
 }
 
 .cardLeft {
-  max-width: 50%;
+  max-width: 65%;
   height: max-content;
 }
 
 .cardRight {
-  max-width: 50%;
-}
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-.cardTitle{
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 800;
-    font-size: 2.5rem;
+.cardTitle {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .cardTitleContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .cardTitleContainer h3,
 .cardTitleContainer p {
-    margin: 0;
+  margin: 0;
 }
 
-.cardHeader{
+  .cardHeader {
     color: black;
     font-family: "Montserrat", serif;
+    font-weight: 550;
+    font-size: 0.9rem;
+  }
+
+  .cardInfo {
+    color: #6C8A82;
+    font-family: "Montserrat", serif;
+    font-weight: 550;
+    font-size: 1.4rem;
+    margin-top: 0.15rem;
+  }
+
+.large {
+  display: block;
+}
+
+.small {
+  display: none;
+}
+
+.cardCategories{
+    color: #4D4D4D;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.cardButton{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    width:max-content;
+    transition: 0.3s ease-in-out;
+}
+
+.cardButton:hover{
+    background: #6C8A82;
+}
+
+.cardButton:focus{
+    background: #6C8A82;
+    transform: scale(1.1);
+}
+
+.homeHero {
+    height: fit-content;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    padding: 2rem 0rem 2rem 4rem;
+    margin-top: 14vh;
+    flex-direction: row;
+}
+
+.heroTitleContainer {
+    width: 50%;
+}
+
+.heroTitle {
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 4.75rem;
+    text-decoration: none;
+    color: #13795f;
+    max-width: 80%;
+    line-height: 4.5rem;
+}
+
+.heroSubTitle {
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    text-transform: uppercase;
     font-size: 1.2rem;
+    text-decoration: none;
+    color: #6c8a82;
+    max-width: 75%;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
 }
 
-.cardInfo{
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 1.5rem;
+.heroText {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0.02rem;
+    width: 85%;
+    font-size: 1.1rem;
+    margin-top: 3.5rem;
 }
 
-.large{
-    display: block;
+.heroImageContainer {
+    width: 40%;
+    border-radius: 1rem;
+    height: 40%;
+    overflow: hidden;
+    display: flex;
 }
 
-.small{
-    display: none;
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-@media (max-width: 60rem) {
-  .landingBody{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 65rem) {
+  .landingBody {
     padding: 1rem 1rem;
   }
 
@@ -98,13 +254,13 @@
 
   .card {
     width: 100%;
-    background: #F8EEE1;
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 3rem;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 1rem;
+    background: #f8eee1;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
   }
 
   .cardLeft {
@@ -113,58 +269,194 @@
 
   .cardRight {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .cardTitle{
+  .cardTitle {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 800;
     font-size: 2.5rem;
-}
+    padding-bottom: 0.5rem;
+  }
 
-.cardTitleContainer {
+  .cardTitleContainer {
     display: flex;
     flex-direction: column;
     gap: 0;
     margin: 0;
     padding: 0;
-}
+  }
 
-.cardTitleContainer h3,
-.cardTitleContainer p {
+  .cardTitleContainer h3,
+  .cardTitleContainer p {
     margin: 0;
-}
+  }
 
-.cardHeader{
+  .cardHeader {
     color: black;
     font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
 
-.cardInfo{
-    color: black;
+  .cardInfo {
+    color: #6C8A82;
     font-family: "Montserrat", serif;
     font-weight: 600;
     font-size: 1.5rem;
-}
+    margin-top: 0.25rem;
+  }
 
-.large{
-    display: none;
-}
-
-.small{
+  .large {
     display: block;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .cardCategories{
+    color: #4D4D4D;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding-bottom: 1rem;
+  }
+
+  .cardButton{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    width: max-content;
+    transition: 0.3s ease-in-out;
+  }
+
+  .cardButton:hover{
+    background: #6C8A82;
+  }
+
+  .cardButton:focus{
+    background: #6C8A82;
+    transform: scale(1.1);
+  }
+
+  .homeHero {
+    height: max-content;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background-image: url(./assets/HeroImage.jpg);
+    background-color: rgba(255, 255, 255, 0.92);
+    background-blend-mode: overlay;
+    margin-top: 5rem;
+    }
+
+    .heroImageContainer{
+        display: none;
+    }
+
+    .heroTitleContainer {
+        width: 95%;
+    }
+
+    .heroTitle {
+        font-family: "Montserrat", serif;
+        font-weight: 800;
+        font-size: 4.75rem;
+        text-decoration: none;
+        color: #13795f;
+        max-width: 95%;
+        line-height: 4.5rem;
+    }
+
+    .heroSubTitle {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #6c8a82;
+        max-width: 95%;
+        margin-top: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .heroText {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.6rem;
+        letter-spacing: 0.02rem;
+        max-width: 95%;
+        font-size: 1.1rem;
+        margin-top: 3.5rem;
+    }
+
+    .landingPage{
+        padding: 2rem 2rem 2rem 2rem;
+    }
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 35rem) {
-  .landingBody{
+  .landingBody {
     padding: 1rem 1rem;
   }
 
-    .cards-container {
+  .cards-container {
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -174,10 +466,10 @@
 
   .card {
     width: 100%;
-    background: #F8EEE1;
+    background: #f8eee1;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.25rem;
     align-items: start;
     justify-content: space-between;
     border-radius: 1rem;
@@ -189,49 +481,139 @@
 
   .cardRight {
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
   }
 
-  .cardTitle{
+  .cardTitle {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 800;
     font-size: 1.75rem;
-}
+    padding-bottom: 0.3rem;
+  }
 
-.cardTitleContainer {
+  .cardTitleContainer {
     display: flex;
     flex-direction: column;
     gap: 0;
     margin: 0;
     padding: 0;
-}
+  }
 
-.cardTitleContainer h3,
-.cardTitleContainer p {
+  .cardTitleContainer h3,
+  .cardTitleContainer p {
     margin: 0;
-}
+  }
 
-.cardHeader{
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 600;
-    font-size: 0.8rem;
-}
-
-.cardInfo{
+  .cardHeader {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .cardInfo {
+    color: #6C8A82;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
     font-size: 1.25rem;
-    margin-top: 0.25rem;
-}
+    margin-top: 0.15rem;
+  }
 
-.large{
+  .large {
     display: none;
-}
+  }
 
-.small{
+  .small {
     display: block;
-}
+  }
 
+  .cardCategories{
+    color: #4D4D4D;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding-bottom: 0rem;
+    line-height: 1.25rem;
+  }
+
+  .cardButton{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    width:auto;
+  }
+
+
+  .cardButton:hover{
+    background: #13795F;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    width:auto;
+  }
+
+    .homeHero {
+    height: max-content;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background-image: url(./assets/HeroImage.jpg);
+    background-color: rgba(255, 255, 255, 0.92);
+    background-blend-mode: overlay;
+    margin-top: 5rem;
+    }
+
+  .heroTitle {
+        font-family: "Montserrat", serif;
+        font-weight: 800;
+        font-size: 4rem;
+        text-decoration: none;
+        color: #13795f;
+        max-width: 95%;
+        line-height: 4.5rem;
+    }
+
+    .heroSubTitle {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #6c8a82;
+        max-width: 95%;
+        margin-top: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    .heroText {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.6rem;
+        letter-spacing: 0.02rem;
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 2.5rem;
+    }
 }
