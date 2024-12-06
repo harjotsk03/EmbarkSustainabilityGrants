@@ -62,6 +62,14 @@
         />
         <button class="filterButton">Filter</button>
       </div>
+      <div id="activeFiltersContainer" class="activeFiltersContainer">
+        <h4 class="activeFiltersTitle">Filters:</h4>
+        <div id="activeFilters"></div>
+        <button id="clearFiltersBtn" class="clearFiltersBtn">
+          Clear All Filters
+        </button>
+      </div>
+
       <div class="cards-container" id="AllCardsContainer"></div>
     </div>
     <footer class="footer">
@@ -70,12 +78,42 @@
         SUB 1310 - 8888 University Drive Burnaby, B.C. V5A 1S6
       </p>
     </footer>
-    <button id="scrollToTopBtn" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    <button
+      id="scrollToTopBtn"
+      style="position: fixed; bottom: 20px; right: 20px; display: none"
+    >
       Scroll to Top
     </button>
+
+    <div id="filterModal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h3 class="filterModelTitle">Filter Grants</h3>
+        <form id="filterForm">
+          <div class="filterButtons">
+            <label class="filterLabel">
+              <input type="checkbox" name="category" value="climate" /> Climate
+            </label>
+            <label class="filterLabel">
+              <input type="checkbox" name="category" value="community" />
+              Community
+            </label>
+            <label class="filterLabel">
+              <input type="checkbox" name="category" value="youth" /> Youth
+            </label>
+            <label class="filterLabel">
+              <input type="checkbox" name="category" value="clean energy" />
+              Clean Energy
+            </label>
+          </div>
+          <button type="submit" class="applyFilterBtn">Apply Filters</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./scrollToTop.js"></script>
     <script src="./popularcards2.js"></script>
     <script src="./allcards2.js"></script>
+    <script src="./filter.js"></script>
   </body>
 </html>
