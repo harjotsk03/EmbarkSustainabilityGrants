@@ -3,7 +3,7 @@ const popularGrantCards = [
     id: 1,
     title: "Eco-Action Accelerator",
     categories: "Categories: Youth, Climate, Community",
-    link: "pages/EcoActionAccelerator.html",
+    link: "/EcoActionAccelerator.html",
     amount: "$5000",
     duration: "6 months",
     deadline: "August 5",
@@ -14,7 +14,7 @@ const popularGrantCards = [
   {
     id: 2,
     title: "Canadian Youth Climate Action Award",
-    link: "pages/CanadianYouthClimateActionAward.html",
+    link: "/CanadianYouthClimateActionAward.html",
     amount: "$500-$5000",
     deadline: "October 1",
     amountTitle: "Amount",
