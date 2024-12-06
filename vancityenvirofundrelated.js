@@ -3,7 +3,7 @@ const popularGrantCards = [
         id: 1,
         title: "Ocean Action Grant",
         categories: "Categories: Youth, Climate, Community",
-        link: "/OceanActionGrant.html",
+        link: "https://harjotsk03.github.io/EmbarkSustainabilityGrants/pages/OceanActionGrant.html",
         amount: "$250-$3000",
         duration: "3 months",
         deadline: "October 1",
@@ -14,7 +14,7 @@ const popularGrantCards = [
     {
       id: 2,
       title: "Canadian Youth Climate Action Award",
-      link: "/CanadianYouthClimateActionAward.html",
+      link: "https://harjotsk03.github.io/EmbarkSustainabilityGrants/pages/CanadianYouthClimateActionAward.html",
       amount: "$500-$5000",
       deadline: "October 1",
       amountTitle: "Amount",
