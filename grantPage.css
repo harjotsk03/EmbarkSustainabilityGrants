@@ -29,29 +29,28 @@
   text-decoration: none;
 }
 
+.footer {
+  padding: 2.5rem 4rem;
+  border-top: 0.1rem solid black;
+  margin-top: 2rem;
+}
 
-  .footer {
-    padding: 2.5rem 4rem;
-    border-top: 0.1rem solid black;
-    margin-top: 2rem;
-  }
+.footerMain {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
 
-  .footerMain {
-    color: black;
-    font-family: "Montserrat", serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-decoration: none;
-  } 
-
-  .footerSub {
-    color: rgb(85, 85, 85);
-    font-family: "Montserrat", serif;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    margin-top: 0.5rem;
-  }
+.footerSub {
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
 
 .topNavigation {
   padding: 1.5rem 1.5rem 1.5rem 4rem;
@@ -69,30 +68,30 @@
 }
 
 .backButton {
-        width: max-content;
-        display: block;
-        margin-bottom: 0rem;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        padding: 0.75rem 0rem;
-        border-radius: 0.65rem;
-        font-size: 0.8rem;
-        text-decoration: none;
-        color: black;
-        transition: 0.3s ease-in-out;
-    }
+  width: max-content;
+  display: block;
+  margin-bottom: 0rem;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  padding: 0.75rem 0rem;
+  border-radius: 0.65rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
 
-    .backButton:hover{
-        color: white;
-        background: #6C8A82;
-        padding: 0.75rem 1rem;
-    }
+.backButton:hover {
+  color: white;
+  background: #6c8a82;
+  padding: 0.75rem 1rem;
+}
 
-    .backButton:focus{
-        color: white;
-        background: #6C8A82;
-        padding: 0.75rem 1rem; 
-    }
+.backButton:focus {
+  color: white;
+  background: #6c8a82;
+  padding: 0.75rem 1rem;
+}
 
 .navLogoImage {
   width: 3.5rem;
@@ -703,9 +702,9 @@
     font-size: 0.75rem;
     width: 100%;
     text-decoration: none;
-    }
+  }
 
-    .popularGrantsTitle {
+  .popularGrantsTitle {
     font-family: "Montserrat", serif;
     font-weight: 800;
     font-size: 1.5rem;
@@ -713,9 +712,9 @@
     color: #13795f;
     max-width: 100%;
     line-height: 2.5rem;
-    }
+  }
 
-    .popularGrantsSubTitle {
+  .popularGrantsSubTitle {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -725,36 +724,35 @@
     color: #6c8a82;
     margin-top: 0.15rem;
     max-width: 100%;
-    }
+  }
 
+  .grantRequirementsText {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
 
-    .grantRequirementsText {
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 0.9rem;
-        line-height: 2rem;
-        width: 100%;
-        text-decoration: none;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
-    }
+  .backButton {
+    width: max-content;
+    display: block;
+    margin-bottom: 0rem;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    padding: 0rem 0rem;
+    border-radius: 0.65rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
 
-    .backButton {
-        width: max-content;
-        display: block;
-        margin-bottom: 0rem;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        padding: 0rem 0rem;
-        border-radius: 0.65rem;
-        font-size: 0.8rem;
-        text-decoration: none;
-        color: black;
-        transition: 0.3s ease-in-out;
-    }
-
-    .grantHero{
-        margin-top: -1rem;
-    }
+  .grantHero {
+    margin-top: -1rem;
+  }
 }

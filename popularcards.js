@@ -42,7 +42,9 @@ function createCard(data) {
                       <h3 class="cardTitle">${data.title}</h3>
                       <p class="cardCategories">${data.categories ?? ""}</p>
                     </div>
-                    <a class="cardViewButton largeGrantButton" href="${data.link}">View Grant Information</a>
+                    <a class="cardViewButton largeGrantButton" href="${
+                      data.link
+                    }">View Grant Information</a>
                   </div>
                   <div class="grantCardInfoContainer">
                     <div class="cardInfoContainer">
@@ -57,7 +59,9 @@ function createCard(data) {
                       <h4 class="classLabel">${data.deadlineTitle ?? ""}</h4>
                       <p class="classInfo">${data.deadline ?? ""}</p>
                     </div>
-                    <a class="cardViewButton smallGrantButton" href="${data.link}">View Grant Information</a>
+                    <a class="cardViewButton smallGrantButton" href="${
+                      data.link
+                    }">View Grant Information</a>
                   </div>
                 </div>
             `;

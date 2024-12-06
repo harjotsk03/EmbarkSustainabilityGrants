@@ -73,7 +73,9 @@ const allGrantCards = [
 
 function createCard(data) {
   return `
-    <div class="card" data-id="${data.id}">
+    <div class="card" data-id="${
+      data.id
+    }" data-category="${data.categories.toLowerCase()}">
       <div class="cardLeft">
         <div class="cardTitleContainer">
           <h3 class="cardTitle">${data.title}</h3>

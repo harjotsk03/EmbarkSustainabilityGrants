@@ -48,8 +48,6 @@
 }
 
 .heroTitleContainer {
-
-  
 }
 
 .heroTitle {
@@ -95,7 +93,7 @@
 .heroImage {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
+  object-fit: cover;
 }
 
 .grantPage {
@@ -391,7 +389,7 @@
 }
 
 .card {
-  background: #F8EEE1;
+  background: #f8eee1;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -412,162 +410,133 @@
 .card a {
 }
 
-.grantCardHeroContainer{
-
-    flex-direction: column;
-    margin-left: 0.5rem;
+.grantCardHeroContainer {
+  flex-direction: column;
+  margin-left: 0.5rem;
 }
 
-.grantCardInfoContainer{
+.grantCardInfoContainer {
   margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    width: 100%;
-    margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  margin-left: 0.5rem;
 }
 
-.grantSearchInput{
+.grantSearchInput {
   width: 85%;
   font-family: "Open Sans";
   padding: 0.75rem 1.25rem;
   border-radius: 2rem;
   border: 1.5px solid black;
-
 }
 
-.inputContainer{
+.inputContainer {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1.2rem;
 }
 
-.cardTitle{
+.cardTitle {
   font-family: "Montserrat", serif;
   font-weight: 800;
-font-size: 1.8rem;
-
+  font-size: 1.8rem;
 }
 
-.cardCategories{
+.cardCategories {
   font-family: "Montserrat", serif;
   font-size: 0.8rem;
   margin-top: 0.6rem;
-
 }
 
 .smallGrantButton {
-  display:block
+  display: block;
 }
 
 .largeGrantButton {
-  display:none
+  display: none;
 }
 
-.cardViewButton{
+.cardViewButton {
   color: white;
   border-radius: 1rem;
   font-family: "Montserrat", serif;
   font-weight: 500;
   font-size: 0.7rem;
   text-decoration: none;
-  background: #13795F;
+  background: #13795f;
   width: max-content;
   padding: 0.75rem 1.5rem;
   margin-top: 0.5rem;
   transition: 0.3s ease-in-out;
-  
 }
 
-.cardViewButton:hover{
-  background: #6C8A82;
+.cardViewButton:hover {
+  background: #6c8a82;
 }
 
-
-.classLabel{
+.classLabel {
   font-family: "Montserrat", serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.classInfo{
-  color: #6C8A82;
+.classInfo {
+  color: #6c8a82;
   font-family: "Montserrat", serif;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.cardInfoContainer{
-
+.cardInfoContainer {
 }
 
 #scrollToTopBtn {
-        display: none;
-        position: fixed;
-        right: 1.5rem;
-        bottom: 1.5rem;
-        background: #13795f;
-        color: white;
-        padding: 0.65rem 1rem;
-        border: none;
-        font-family: "Montserrat";
-        font-weight: 500;
-        font-size: 0.6rem;
-        border-radius: 0.7rem;
-        cursor: pointer;
-        z-index: 1000;
-        transition: 0.3s ease-in-out;
-    }
-
-
-
-    .filterButton{
-      width: 7rem;
-      padding: 0.5rem;
-      border-radius: 1rem;
-      border: none;
-      background: #13795f;
-      color: white;
-      transition: ease-in-out;
-      transition-duration: 250ms;
-  }
-
-  .filterButton:hover{
-      cursor: pointer;
-      background: #88B29F;
-  }
-
-  .filterButton:focus{
-    cursor: pointer;
-    background: #88B29F;
+  display: none;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  background: #13795f;
+  color: white;
+  padding: 0.65rem 1rem;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.6rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.3s ease-in-out;
 }
 
-  
+.filterButton {
+  width: 7rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background: #13795f;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 250ms;
+}
 
+.filterButton:hover {
+  cursor: pointer;
+  background: #88b29f;
+}
+
+.filterButton:focus {
+  cursor: pointer;
+  background: #88b29f;
+}
 
 /* MOBILE ABOVE  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*  Desktop BELOW */
-
-
- 
+/*  Desktop BELOW */
 
 @media (width>60rem) {
   .topNavigation {
@@ -579,14 +548,12 @@ font-size: 1.8rem;
     z-index: 999;
   }
 
-
   .cards-container {
     display: flex;
     flex-direction: wrap;
     gap: 1rem;
     margin-top: 1rem;
   }
-
 
   .navLogo {
     font-family: "Montserrat", serif;
@@ -618,7 +585,7 @@ font-size: 1.8rem;
 
   .heroTitleContainer {
     width: 50%;
-}
+  }
 
   .heroTitle {
     font-family: "Montserrat", serif;
@@ -663,7 +630,7 @@ font-size: 1.8rem;
   .heroImage {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
+    object-fit: cover;
   }
 
   .small {
@@ -682,9 +649,7 @@ font-size: 1.8rem;
   .grantHeroMain {
     display: flex;
     flex-direction: row;
-
   }
-
 
   .relatedGrantCard {
     border: 0.15rem solid black;
@@ -750,7 +715,7 @@ font-size: 1.8rem;
     font-weight: 800;
     font-size: 6rem;
     text-decoration: none;
-    color: #13795F;
+    color: #13795f;
   }
 
   .grantOrg {
@@ -827,14 +792,14 @@ font-size: 1.8rem;
 
   .grantInfoText {
     margin-top: 0.6rem;
-    color: #6C8A82;
+    color: #6c8a82;
     font-family: "Montserrat", serif;
     font-weight: 600;
     font-size: 2.5rem;
   }
 
   .buttonPrimary {
-    background: #13795F;
+    background: #13795f;
     border-radius: 1000px;
     padding: 0.9rem 1.6rem;
     color: white;
@@ -846,18 +811,18 @@ font-size: 1.8rem;
   }
 
   .buttonPrimary:hover {
-    background: #6C8A82;
+    background: #6c8a82;
     transition-duration: 500ms;
     animation: ease-in-out;
   }
 
   .buttonPrimary:focus {
-    background: #6C8A82;
+    background: #6c8a82;
     transition-duration: 500ms;
     animation: ease-in-out;
   }
 
-  .grantRequirements{
+  .grantRequirements {
     margin-top: 2rem;
   }
 
@@ -960,7 +925,7 @@ font-size: 1.8rem;
   }
 
   .card {
-    background: #F8EEE1;
+    background: #f8eee1;
     height: max-content;
     display: flex;
     flex-direction: row;
@@ -968,213 +933,210 @@ font-size: 1.8rem;
     padding: 3rem 3rem;
     max-width: 40%;
     border-radius: 1rem;
-    }
-
-  .grantCardHeroContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 60%;
-    }
-
-    .grantCardInfoContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        text-align: left;
-        width: max-content;
-    }
-
-    .grantSearchInput{
-        width: 100%;
-        font-family: "Open Sans";
-        padding: 0.75rem 1.25rem;
-        border-radius: 0.75rem;
-        border: 1.5px solid black;
-    }
-
-    .inputContainer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.75rem;
-        margin-top: 1rem;
-    }
-
-    .filterButton{
-        width: max-content;
-        padding: 1rem 1.6rem;
-        border-radius: 0.75rem;
-        border: none;
-        background: #13795f;
-        color: white;
-        transition: ease-in-out;
-        transition-duration: 250ms;
-    }
-
-    .filterButton:hover{
-        cursor: pointer;
-        background: #88B29F;
-    }
-
-    .filterButton:focus{
-      cursor: pointer;
-      background: #88B29F;
   }
 
+  .grantCardHeroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 60%;
+  }
 
-    .cardTitle{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 800;
-        font-size: 2.5rem;
-        max-width: 80%;
-    }
+  .grantCardInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+    width: max-content;
+  }
 
-    .cardCategories{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1.2rem;
-        max-width: 80%;
-        margin-top: 0.5rem;
-    }
+  .grantSearchInput {
+    width: 100%;
+    font-family: "Open Sans";
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    border: 1.5px solid black;
+  }
 
-    .cardViewButton{
-        color: white;
-        border-radius: 0.9rem;
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 1rem;
-        text-decoration: none;
-        background: #13795F;
-        width: max-content;
-        padding: 0.75rem 1.5rem;
-        margin-top: 3rem;
-        transition: 0.3s ease-in-out;
-        
-    }
+  .inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
 
-    .grantInfo{
-        gap: 3rem;
-    }
+  .filterButton {
+    width: max-content;
+    padding: 1rem 1.6rem;
+    border-radius: 0.75rem;
+    border: none;
+    background: #13795f;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 250ms;
+  }
 
-    .grantInfoItem {
-        width: 100%;
-    }
+  .filterButton:hover {
+    cursor: pointer;
+    background: #88b29f;
+  }
 
-    .cardViewButton:hover{
-        background: #6C8A82;
-    }
+  .filterButton:focus {
+    cursor: pointer;
+    background: #88b29f;
+  }
 
-    .smallGrantButton {
-      display:none
-    }
-    
-    .largeGrantButton {
-      display:block;
-    }
+  .cardTitle {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    max-width: 80%;
+  }
 
-    .classLabel{
-        color: black;
-        font-family: "Montserrat", serif;
-        font-weight: 500;
-        font-size: 0.9rem;
-    }
+  .cardCategories {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin-top: 0.5rem;
+  }
 
-    .classInfo{
-        color: red;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
+  .cardViewButton {
+    color: white;
+    border-radius: 0.9rem;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    background: #13795f;
+    width: max-content;
+    padding: 0.75rem 1.5rem;
+    margin-top: 3rem;
+    transition: 0.3s ease-in-out;
+  }
 
-    .cardInfoContainer{
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
+  .grantInfo {
+    gap: 3rem;
+  }
 
-    #cardsContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2.5rem;
-        margin-top: 2rem;
-    }
+  .grantInfoItem {
+    width: 100%;
+  }
 
-    #AllCardsContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2.5rem;
-        margin-top: 2rem;
-        min-height: 80vh;
-    }
+  .cardViewButton:hover {
+    background: #6c8a82;
+  }
 
-    #scrollToTopBtn {
-        display: none;
-        position: fixed;
-        right: 2rem;
-        bottom: 2rem;
-        background: #13795f;
-        color: white;
-        padding: 0.75rem 1.25rem;
-        border: none;
-        font-family: "Montserrat";
-        font-weight: 500;
-        border-radius: 0.7rem;
-        cursor: pointer;
-        z-index: 1000;
-        transition: 0.3s ease-in-out;
-        font-size: 0.8rem;
-    }
+  .smallGrantButton {
+    display: none;
+  }
 
-    #scrollToTopBtn:hover{
-        background: #6C8A82;
-        color: 13795f;
-    }
+  .largeGrantButton {
+    display: block;
+  }
 
-    .backButton {
-        margin-top: 4rem;
-        width: max-content;
-        display: block;
-        margin-bottom: 0rem;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        padding: 0.75rem 0rem;
-        border-radius: 0.65rem;
-        font-size: 0.8rem;
-        text-decoration: none;
-        color: black;
-        margin-top: 4rem;
-        transition: 0.3s ease-in-out;
-    }
+  .classLabel {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
 
-    .backButton:hover{
-        color: white;
-        background: #6C8A82;
-        padding: 0.75rem 1rem;
-    }
+  .classInfo {
+    color: red;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
 
-    .backButton:focus{
-        color: white;
-        background: #6C8A82;
-        padding: 0.75rem 1rem; 
-    }
+  .cardInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  #cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  #AllCardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    min-height: 80vh;
+  }
+
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background: #13795f;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    font-family: "Montserrat";
+    font-weight: 500;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+    font-size: 0.8rem;
+  }
+
+  #scrollToTopBtn:hover {
+    background: #6c8a82;
+    color: 13795f;
+  }
+
+  .backButton {
+    margin-top: 4rem;
+    width: max-content;
+    display: block;
+    margin-bottom: 0rem;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    padding: 0.75rem 0rem;
+    border-radius: 0.65rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 4rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .backButton:hover {
+    color: white;
+    background: #6c8a82;
+    padding: 0.75rem 1rem;
+  }
+
+  .backButton:focus {
+    color: white;
+    background: #6c8a82;
+    padding: 0.75rem 1rem;
+  }
 }
-
 
 @keyframes fadeIn {
   to {
-    opacity: 1; /* End fully opaque */
-    transform: translateY(0); /* Reset transform */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .fade-in {
-  opacity: 0; /* Start fully transparent */
-  transform: translateY(20px); /* Optional: Start slightly moved down */
-  animation: fadeIn 0.9s forwards; /* Animation duration can be adjusted */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.9s forwards;
 }
