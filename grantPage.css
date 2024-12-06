@@ -117,15 +117,13 @@
 .grantTitle {
   font-family: "Montserrat", serif;
   font-weight: 800;
-  font-size: 6rem;
+  font-size: 5.75rem;
   text-decoration: none;
   color: #13795f;
-  max-width: 90%;
+  max-width: 85%;
 }
 
 .grantOrg {
-  margin-top: 0.7rem;
-  margin-bottom: 2rem;
   margin-left: 0.2rem;
   font-family: "Montserrat", serif;
   font-weight: 400;
@@ -147,12 +145,12 @@
 .grantDescription {
   font-family: "Montserrat", serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 2.2rem;
   text-decoration: none;
   color: black;
   margin-bottom: 2rem;
-  max-width: 60%;
+  max-width: 75%;
   margin-top: 1rem;
 }
 
@@ -204,7 +202,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 50%;
+  max-width: 80%;
+  min-width: 25%;
   justify-content: space-between;
   height: 40vh;
 }
@@ -372,7 +371,7 @@
 }
 
 .grantPage {
-  padding: 9rem 10rem 0rem 10rem;
+  padding: 7.5rem 10rem 0rem 10rem;
 }
 
 .hero {
