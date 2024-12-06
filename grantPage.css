@@ -6,6 +6,53 @@
   padding: 0;
 }
 
+.footer {
+  padding: 1.5rem 2rem;
+  border-top: 0.1rem solid black;
+  margin-top: 2rem;
+  left: 0;
+}
+
+.footerMain {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footerSub {
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+
+  .footer {
+    padding: 2.5rem 4rem;
+    border-top: 0.1rem solid black;
+    margin-top: 2rem;
+  }
+
+  .footerMain {
+    color: black;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+  } 
+
+  .footerSub {
+    color: rgb(85, 85, 85);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+
 .topNavigation {
   padding: 1.5rem 1.5rem 1.5rem 4rem;
   position: fixed;
@@ -78,6 +125,7 @@
 
 .grantOrg {
   margin-top: 0.7rem;
+  margin-bottom: 2rem;
   margin-left: 0.2rem;
   font-family: "Montserrat", serif;
   font-weight: 400;
